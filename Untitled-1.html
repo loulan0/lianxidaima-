@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        // console.log(3>2 && 1>2);//两个为真才是真
+        // console.log(1>2 || 3>2);//两个为假才是假
+        // var nev=prompt('请输入名字:')
+        // if(nev=='刘德华') {
+        //     alert('你中奖5元');
+        // }else {
+        //     alert('你没有中奖');
+        // }
+
+        // switch ：开关 转换  ， case ：小例子   选项
+        // 如果所有的 case 的值都和表达式的值不匹配，则执行 default 里的代码
+        // switch(7) {
+        //     case 1 :
+        //         console.log(1);
+        //         break;//跳出
+        //     case 2 :
+        //         console.log(2);
+        //         break;
+        //     case 3 :
+        //         console.log(3);
+        //         break;
+        //     case 4 :
+        //         console.log(4);
+        //         break;
+        //         default:
+        //     console.log('无');
+        // }
+
+        var nav = prompt('请输入几点种:');
+        // nav = parseFloat(nav);//转换数据耐类型
+        nav = Number(nav);//强制转换数据耐类型
+        // if (nav<=12) {
+        //     alert('中午好！');
+        // }else {
+        //     alert('下午好！');
+        // }
+
+        switch (nav) {
+            case 1:
+                alert('早上好！');
+                break;
+
+            case 13:
+                alert('下午好！');
+                break;
+                default:
+                alert('无');
+        }
+    </script>
+</head>
+
+<body></body>
+
+</html>
