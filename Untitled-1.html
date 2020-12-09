@@ -34,16 +34,16 @@
         //     console.log('无');
         // }
 
-        var nav = prompt('请输入几点种:');
+        // var nav = prompt('请输入几点种:');
         // nav = parseFloat(nav);//转换数据耐类型
-        nav = Number(nav);//强制转换数据耐类型
+        // nav = Number(nav);//强制转换数据耐类型
         // if (nav<=12) {
         //     alert('中午好！');
         // }else {
         //     alert('下午好！');
         // }
 
-        switch (nav) {
+        /* switch (nav) {
             case 1:
                 alert('早上好！');
                 break;
@@ -53,7 +53,102 @@
                 break;
                 default:
                 alert('无');
+        }  */
+
+        // 计算1——100之间的和
+        // var num =0;
+        // var i = 0;
+        // for (var i=1; i<=100;i++){
+        //     num = num+i;
+        // }
+        // console.log(num);
+
+        // 计算1-100之间的奇数和偶数
+        /* var sum=0;
+        var jishu=0;
+        var i=0;
+        for (var i=1;i<=100;i++){
+            if (i % 2 ==0){
+                sum = sum +i;
+            }
+            else {
+                jishu = jishu +i;
+            }
         }
+        console.log(sum);
+        console.log(jishu); */
+
+        // 求1-100能被三整除的和
+        /* var sum = 0;
+        var i = 0;
+        var sum1=0
+        for (var i=1;i<=100;i++){
+            if (i%3==0){
+                sum = sum+i;
+            }
+            else{
+                // sum1 = sum1 +i;
+                
+            }
+        }
+        console.log(sum); */
+        // console.log('不能整除的数和为'+sum1);
+
+        // 求班级总成绩和，和班级成绩平均数
+        /* var num=prompt('请输入班级总人数:');
+        var sum = 0; //求和
+        var average = 0; //求平均值
+        for (var i = 1 ;i<=num;i++){
+            var score=prompt('请输入地'+i+'个学生的成绩');
+            sum = sum +parseFloat(score);//转换数字型
+        }
+        average =sum / num;
+        alert('班级总和成绩是'+sum);
+        alert('班级平均成绩是'+average); */
+
+        // 打印星星
+        // var sum = '';
+        // for (var i = 1;i<=10;i++) {
+        //     //核心算法
+        //     for(var j = 1; j<=i; j++){ 
+        //         sum =sum +'★';
+        //     }
+        //     sum=sum+'\n'
+        // }
+        // console.log(sum);
+
+        //打印乘法表
+        /* var sum = '';
+        for (var i = 1; i <= 9; i++) {
+            //核心算法
+            for (var j = 1; j <= i; j++) {
+                // sum =sum +'★';
+                sum += j + 'x' + i + '=' + j * i + '\t';
+            }
+            sum = sum + '\n';
+        }
+        console.log(sum); */
+
+        // 跳过7
+        /* var num = 0;
+        for (i = 1;i <= 100; i++){
+            if (i==3) {
+                continue;
+            } else {
+                num +=i;
+            }
+            
+        }
+        console.log(num); */
+
+
+
+        // do {
+        //     var num = prompt('请输入用户名:');
+        //     var sum = prompt('请输入密码:');
+        // } while (num !== '123' && sum !== '456')
+
+        
     </script>
 </head>
 

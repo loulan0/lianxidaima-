@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 简单存取钱练习
+        var sum = 100;
+        var storage = 0;
+        var take_out = 0;
+        do {
+            var num = prompt('输入1查询余额' + '\n' + '输入2存钱' + '\n' + '输入3取钱' + '\n' + '输入4退出:');
+            num = parseFloat(num);
+            switch (num) {
+                case 1:
+                    alert('你的余额是' + sum + '元!');
+                    break;
+
+                case 2:
+                    storage = prompt('请输入存钱的数目:')
+                    storage = parseFloat(storage);
+                    sum = sum + storage;
+                    alert('你的余额是' + sum + '元!');
+                    break;
+                case 3:
+                    take_out = prompt('请输入你要取的钱:');
+                    take_out = parseFloat(take_out);
+                    sum = sum - take_out2;
+                    alert('你的余额是' + sum + '元!');
+                    break;
+                case 4:
+                    alert('正在退出--');
+                    break;
+                default:
+                    alert('输入错误');
+            }
+        } while (num !== 4)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
