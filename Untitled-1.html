@@ -58,8 +58,9 @@
         // 计算1——100之间的和
         // var num =0;
         // var i = 0;
-        // for (var i=1; i<=100;i++){
+        // for (var i=0; i<=100;i++){
         //     num = num+i;
+        //     console.log(num);
         // }
         // console.log(num);
 
@@ -148,10 +149,79 @@
         //     var sum = prompt('请输入密码:');
         // } while (num !== '123' && sum !== '456')
 
-        
+        /* var sum = 0;
+        var nev = 0;
+        for (var i = 1 ; i<=100;i++) {
+            if (i%3==0) {
+                continue; //跳出循环
+            }
+            sum += i;
+        }
+        alert('总数为'+sum); */
+
+
+
+        //数组
+        /* var nuv = [1, 2, 3, 4, 5, 6];
+        console.log(nuv[2]); */
+
+        /* var arr = ['关于', '张飞', '马超', '赵云'];
+        for (var i=0 ; i<4; i++) {
+            console.log(arr.length);
+        } */
+
+        // 比较大小
+        /* var arr = [1, 2, 3, 4, 5, 6];
+        var max = arr[0];
+        for (var i = 1; i<arr.length; i++) {
+            if (arr[i]>max) {
+                max = arr [i];
+            }
+        }
+        console.log(max); */
+
+
+        /* var sum = ['red', 'green', 'blue', 'pink'];
+        var str = '';
+        var sep = '|'
+        for (var i = 0; i<sum.length;i++) {
+            str = str + sum[i] + sep;
+        }
+        console.log(str); */
+
+        // 直接修改数组长度
+        /* var num = 0;
+        var sum = [];
+        for (var i = 0; i<10; i++) {
+            sum[i] = i+1;
+        }
+        console.log(sum); */
+
+        //函数
+        // function sunTerm(vrice, vrice2) {
+        //     var sum = 0;
+        //     for (var i = vrice; i <= vrice2; i++) {
+        //         sum = sum + i;
+        //     }
+        //     console.log(sum);
+        // }
+
+        //求数组最大值
+        function max(summ);
+        var pd = summ[0];
+        for (var i = 1; i <= summ.length; i++) {
+            if (summ[i] > pd) {
+                pd = summ[i];
+            }
+            return pd;
+
+        }
+        var sum = max([1, 3, 9, 12, 13, 14, 99, 2, 45, 66]);
+        console.log(sum);
     </script>
 </head>
 
-<body></body>
+<body>
+</body>
 
 </html>
