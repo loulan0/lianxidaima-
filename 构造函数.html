@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+       /* <!-- 构造函数 --> */
+       /* 名字首字母大写 */
+        function Xm(uname,age,sex) {
+        this.name = uname;
+        this.age = age;
+        this.sex = function () {
+            console.log('hi');
+        }
+    }
+    var ll = new Xm('zd',18,'n')
+    /* console.log(ll); */
+    // 遍历对象
+    for (var k in ll) {
+        console.log(k);
+        console.log(ll[k]);
+    }
+   </script>
+
+</body>
+</html>

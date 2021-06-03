@@ -99,11 +99,80 @@
         /* var num = 1200;
         var str = num.toString();
         console.log(str); */
+        // function Sum(n1,n2) {
+        //             var sum=0;
+        //             for (var i=n1; i<=n2;i++) {
+        //                 sum = sum+i;
+        //             }
+        //             console.log(sum);
+        // }
+        // Sum(1,100);
+        
+
+        // console.log(Math.PI);
+        // var shijian;
+        // var now =new Date();
+        // console.log(now);/* 当前时间 */
+        // console.log(now.getFullYear());/* 年 */
+        // console.log(now.getMonth()+1);/* 月 */
+        // console.log(now.getDate());/* 日期 */
+        // console.log(now.getSeconds());/* 秒数 */
+        // console.log(now.getDay());/* 星期几，周日返回零 */
+        // // 输出日期
+        // var year = now.getFullYear();
+        // var month = now.getMonth()+1;
+        // var dates =now.getDate();
+        // var xiaoshi = now.getHours();
+        // var fen = now.getMinutes();
+        // var miao = now.getSeconds();
+        // shijian = '今天是:'+year+'年'+month+'月'+dates+'号'+xiaoshi+'时'+fen+'分'+miao+'秒';
+        // console.log(shijian);
+        window.onload=function(){
+          //每1秒刷新时间
+         setInterval("NowTime()",1000);
+        }
+        function NowTime () {
+        var now =new Date();
+        var n = now.getFullYear();
+        var y = now.getMonth()+1;
+        var e =now.getDate();
+        var s = now.getHours();
+        var f = now.getMinutes();
+        var m = now.getSeconds();
+        n=check(n);
+        y=check(y);
+        e=check(e);
+        s=check(s);
+        f=check(f);
+        m=check(m);
+        var shijian = n+'-'+y+'-'+e+'-'+s+'-'+f+'-'+m;
+        document.querySelector('.s_j').innerHTML="时间"+shijian;
+        }
+        function check(i) {
+            var num = (i<10)?('0'+i) : i;
+            return num;
+        }
     </script>
+    <style>
+        .xz {
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
 
 <body>
-
+    <div class="div"></div>
+    <script>
+    // // innerText 和 innerHTML的区别
+    // // 1. innerText 不识别html标签 非标准 去除空格和换行
+    // var div0 = document.querySelector('div');
+    // // div.innerText = '<strong>今天是：</strong> 2019';
+    // // 2. innerHTML 识别html标签 W3C标准 保留空格和换行的
+    // div0.innerHTML = shijian;
+    // // 这两个属性是可读写的 可以获取元素里面的内容
+    </script>
 </body>
 
 </html>

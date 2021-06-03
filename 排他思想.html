@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 100px;
+
+            background-color: #ccc;
+        }
+        .jz {
+            margin: auto;
+        }
+        .lou {
+            float: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="jz">
+    <div>
+        <button>按钮</button>
+        <button>按钮</button>
+        <button>按钮</button>
+        <button>按钮</button>
+        <button>按钮</button>
+    </div>
+    <button class="lou"><a href="" target="_blank" class="lianjie">清除</a> </button>
+</div>
+    <script>
+        // 1.获取所有元素
+        var btns = document.querySelectorAll('button');
+        var bo = document.querySelector('.lou');
+        var lianjie = document.querySelector('.lianjie');
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.backgroundColor = '';
+                }
+                this.style.backgroundColor = 'red';
+            }
+        }
+        bo.onclick = function () {
+            lianjie.href = 'https://www.loulansd.com';//测试更换链接
+            
+            
+            // for (var i = 0; i < btns.length; i++) {
+            //     btns[i].style.backgroundColor = '';
+            // }
+        }
+        console.log(bo);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+// 创建一个对象
+    var duxiang = {
+       name:'01',
+       age:'18',
+       sayhi:function() {
+           console.log('hi');
+       }
+    }
+    console.log(duxiang['name']);/* 必须加引号 */
+    duxiang.sayhi();/* 调用函数 */
+
+// 利用new Object 创建对象
+    var duixian = new Object();/* O要大写 */
+// 追加上
+    duixian.name='123';/* 分号结束 */
+    duixian.age1='123';
+    duixian.age2='123';
+    duixian.mz = function () {
+        console.log('123');
+    }
+    // 调用
+    duixian.mz();
+
+
+    var diannao = {
+        name:'电脑',
+        color:'red',
+        pingpai:'huawei',
+        xingwei: function() {
+            console.log('看电影');
+        }
+    }
+    for (k in diannao) {
+        console.log(k);
+        console.log(diannao[k]);
+    }
+    console.log(diannao['name']);
+    </script>
+</body>
+</html>

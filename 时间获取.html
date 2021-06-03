@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span class="s_j"></span><br>
+
+    <script>
+        window.onload = function () {
+            //每1秒刷新时间
+            setInterval("NowTime()", 1000);
+        }
+        function NowTime() {
+            var now = new Date();
+            var n = now.getFullYear();
+            var y = now.getMonth() + 1;
+            var e = now.getDate();
+            var s = now.getHours();
+            var f = now.getMinutes();
+            var m = now.getSeconds();
+            n = check(n);
+            y = check(y);
+            e = check(e);
+            s = check(s);
+            f = check(f);
+            m = check(m);
+            var shijian = n + '-' + y + '-' + e + '-' + s + '-' + f + '-' + m;
+            document.querySelector('.s_j').innerHTML = "今天" + shijian;
+        }
+
+
+        function check(i)     {
+            var num = (i < 10) ? ('0' + i) : i;
+            return num;
+        }
+    </script>
+</body>
+</html>

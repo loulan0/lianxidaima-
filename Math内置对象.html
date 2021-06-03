@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /* 1. */
+        // 绝对值
+        console.log(Math.abs(-123));
+        // 隐式转换
+        console.log(Math.abs('-123'));
+    /* 2. */
+    // 向下取整,取小
+    console.log(Math.floor(1.8));
+    // 向上取整、往大了取
+    console.log(Math.ceil(1.1));
+    // 3.四舍五入，其他数字都是四舍五入但是.5特殊，往大了取
+    console.log(Math.round(1.5));
+    console.log(Math.round(-1.5));/* 结果-1 */
+
+    // 最大值最小值
+    console.log(Math.max(1,2,3));
+    console.log(Math.min(1,2,3));
+// 0-1的随机数
+console.log(Math.random());
+function getrandom(min,max) {
+    return Math.floor(Math.random()*(max-min+1))+min;
+}
+alert(getrandom(1,10));
+    </script>
+</head>
+<body>
+</body>
+</html>

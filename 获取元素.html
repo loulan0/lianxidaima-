@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="di">
+        123
+    </div>
+    <div class="di">
+        456
+    </div>
+    <div class="di">
+        789
+    </div>
+    <script>
+        // 类名获取元素
+        /* var i = document.getElementsByClassName('di');
+        console.log(i); */
+        /* i.onclick = function() {
+            alert('测试成功');
+        } */
+        // 返回指定选择器第一个元素对象
+        var o = document.querySelector('div');
+        o.onclick = function () {
+            alert('123');
+        }
+    </script>
+</body>
+
+</html>
